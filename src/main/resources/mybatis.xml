@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<!-- xml配置对于NULL值默认作为字符串来处理 -->
+		<setting name="jdbcTypeForNull" value="VARCHAR"/>
+		<setting name="logImpl" value="LOG4J"/>
+		<!-- 打印sql日志 -->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+		<!-- 使用驼峰命名法转换字段。 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	<typeAliases>
+		<package name="com.danicoz.pagehelptest.bean" />
+	</typeAliases>
+
+	<!--<plugins>-->
+		<!--<plugin interceptor="com.github.pagehelper.PageInterceptor">-->
+			<!--&lt;!&ndash;<property name="dialect" value="mysql"/>&ndash;&gt;-->
+			<!--<property name="offsetAsPageNum" value="true"/>-->
+			<!--<property name="rowBoundsWithCount" value="true"/>-->
+		<!--</plugin>-->
+	<!--</plugins>-->
+
+</configuration>
